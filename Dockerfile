@@ -6,7 +6,7 @@ RUN \
 	apt-get install -y build-essential git make \
 	&& mkdir /tmp/vmaf \
 	&& cd /tmp/vmaf \
-	&& git clone https://github.com/Netflix/vmaf.git . \
+	&& git clone --branch v1.3.15 https://github.com/Netflix/vmaf.git . \
 	&& cd ptools \
 	&& make \
 	&& cd ../wrapper \
